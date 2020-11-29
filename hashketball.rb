@@ -128,17 +128,20 @@ def game_hash
 end
 
 def num_points_scored(name)
-  game_hash[:home][:players].length do |num|
-    if name == game_hash[:home][:players][num][:player_name]
-      return game_hash[:home][:players][num][:points]
+  count = 0 
+  count 1 = 0 
+  while count < game_hash[:home][:players].length do 
+    if name == game_hash[:home][:players][count][:player_name]
+      return game_hash[:home][:players][count][:points]
     end 
+    count = count + 1 
   end 
-  game_hash[:away][:players].length do |num|
-    if name == game_hash[:away][:players][num][:player_name]
-      return game_hash[:away][:players][num][:points]
+  while count1 < game_hash[:away][:players].length do 
+    if name == game_hash[:away][:players][count1][:player_name]
+      return game_hash[:away][:players][count1][:points]
     end 
+    count1 = count1 + 1 
   end 
-  binding.pry 
 end 
 
 
