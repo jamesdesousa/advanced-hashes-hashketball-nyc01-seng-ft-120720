@@ -210,6 +210,22 @@ def player_stats(name)
     count1 = count1 + 1 
   end
 end 
+
+def big_shoe_rebounds 
+  biggest_shoe = 0 
+  rebounds = 0 
+  count = 0 
+  count1 = 0 
+    while count < game_hash[:home][:players].length do 
+      if game_hash[:home][:players][count][:shoe] > biggest_shoe 
+        biggest_shoe = game_hash[:home][:players][count][:shoe]
+        rebounds = game_hash[:home][:players][count][:rebounds]
+      end 
+    count = count + 1 
+  end 
+  
+  
+  
   
       
       
