@@ -138,7 +138,6 @@ def num_points_scored(name)
       return game_hash[:away][:players][num][:points]
     end 
   end 
-  binding.pry 
 end 
 
 
