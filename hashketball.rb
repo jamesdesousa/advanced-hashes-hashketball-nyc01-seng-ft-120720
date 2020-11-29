@@ -144,6 +144,24 @@ def num_points_scored(name)
   end 
 end 
 
+def shoe_size(name)
+  count = 0 
+  count1 = 0 
+  while count < game_hash[:home][:players].length do 
+    if name == game_hash[:home][:players][count][:player_name]
+      return game_hash[:home][:players][count][:shoe]
+    end 
+    count = count + 1 
+  end 
+  while count1 < game_hash[:away][:players].length do 
+    if name == game_hash[:away][:players][count1][:player_name]
+      return game_hash[:away][:players][count1][:shoe]
+    end 
+    count1 = count1 + 1 
+  end 
+end 
+  
+
 
 
 
