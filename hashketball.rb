@@ -182,11 +182,13 @@ def player_numbers(name)
   if name == game_hash[:home][:team_name] 
     while count < game_hash[:home][:players].length do 
       array << game_hash[:home][:players][count][:number]
+      count = count + 1 
     end 
   end 
   if name == game_hash[:away][:team_name]
     while count1 < game_hash[:away][:players].length do 
       array << game_hash[:end][:players][count][:number]
+      count1 = count + 1 
     end
   end 
   array 
